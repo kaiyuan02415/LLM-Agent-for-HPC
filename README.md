@@ -1,8 +1,8 @@
 代码建设中，初期
 
-Usage：
-（0）运行SimpleModule.main进行本地训练测试
-（1）运行LLM_Agent.HPO.main进行基于LLM Agent的超参数调优，EXP.config可以修改一些基本参数
+Usage：</br>
+（0）运行SimpleModule.main进行本地训练测试</br>
+（1）运行LLM_Agent.HPO.main进行基于LLM Agent的超参数调优，EXP.config可以修改一些基本参数</br>
 （2）运行LLM_Agent.Quant.main进行基于LLM Agent的量化，支持基本的QAT混合精度量化
 
 注意事项：
