@@ -1,0 +1,19 @@
+1.基础调参：
+import ssl
+import os
+import json
+import openai
+import torch
+import torchvision
+import torchvision.transforms as transforms
+import torch.nn as nn
+import torch.optim as optim
+from matplotlib import pyplot as plt
+
+Python 3.10
+
+
+2.量化
+
+
+3.剪枝
