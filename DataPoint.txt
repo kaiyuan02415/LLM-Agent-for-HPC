@@ -97,10 +97,4 @@ config = {
     "Quant_error":
     "Perceptual_quality":
 
-2.剪枝
-可调超参数：
-（1）
-
-评价指标：
-
 
