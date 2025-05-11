@@ -25,7 +25,7 @@ from LLM_Agent_for_HPC.LLM_Agent.HPO.models.SimpleNN import SimpleCNN
 from LLM_Agent_for_HPC.LLM_Agent.HPO.config import config
 
 # My openai-key
-key = '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'
+key = MY-Key
 
 # 初始化的Prompt，参考sklearn格式
 Prompt0 = """
