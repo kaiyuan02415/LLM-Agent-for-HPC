@@ -1,4 +1,4 @@
-代码建设中，初期
+这是-用于量化模型微调的Agent-的简单实现
 
 Usage：</br>
 （0）运行SimpleModule.main进行本地训练测试</br>
@@ -11,16 +11,12 @@ Usage：</br>
 3.由于每次测试都会消耗token，不妨在本地先运行训练代码保证逻辑无误，我提供了一个范本：SimpleModule.main
 
 更新：</br>
-2024.8.26 
 更新了GPT-4的调用方式，现在支持few-shot的GPT-4的对话方式
 
-2024.8.27 
 解决访问GPT网页出现502 Bad Gateway的问题
 1.管理员身份运行cmd
 2.输入ipconfig /flushdns
 3.输入netsh winsock reset
 4.重启电脑即可
 
-2024.8.31
-支持简单的量化的Agent
 
