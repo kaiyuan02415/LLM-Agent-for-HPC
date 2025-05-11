@@ -26,7 +26,7 @@ from LLM_Agent_for_HPC.LLM_Agent.Quant.config import config
 from LLM_Agent_for_HPC.LLM_Agent.Quant.Prompt import Prompt0
 
 # My openai-key
-key = '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'
+key = My-Key
 
 # 测试连接
 def connection_test(model="gpt-3.5-turbo"):
