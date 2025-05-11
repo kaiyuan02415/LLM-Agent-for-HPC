@@ -33,8 +33,7 @@
 2. **502 Bad Gateway 问题修复**  
    如遇到访问 GPT 出现 “502 Bad Gateway” 错误，请按以下步骤操作：  
    ```bash
-   (1)
-   以管理员身份打开命令提示符:
+   (1) 以管理员身份打开命令提示符:
    ipconfig /flushdns
    netsh winsock reset
    (2) 重启电脑
