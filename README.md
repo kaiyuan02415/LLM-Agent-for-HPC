@@ -28,14 +28,16 @@
 
 1. **GPT-4 调用方式更新**  
    - 现已支持 Few-shot 对话模式。
+   - 现已支持 Chunk 流式对话模式。
 
 2. **502 Bad Gateway 问题修复**  
    如遇到访问 GPT 出现 “502 Bad Gateway” 错误，请按以下步骤操作：  
    ```bash
-   # 以管理员身份打开命令提示符
+   (1)
+   以管理员身份打开命令提示符:
    ipconfig /flushdns
    netsh winsock reset
-   # 重启电脑
+   (2) 重启电脑
 
 
 
