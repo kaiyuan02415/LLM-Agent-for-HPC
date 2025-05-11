@@ -1,22 +1,85 @@
-这是-用于量化模型微调的Agent-的简单实现
+# 简介
+这是一个用于量化模型微调的 Agent 的简单实现。
 
-Usage：</br>
-（0）运行SimpleModule.main进行本地训练测试</br>
-（1）运行LLM_Agent.HPO.main进行基于LLM Agent的超参数调优，EXP.config可以修改一些基本参数</br>
-（2）运行LLM_Agent.Quant.main进行基于LLM Agent的量化，支持基本的QAT混合精度量化
+---
 
-注意事项：</br>
-1.必须用有余额的key才能进行调用</br>
-2.必须进行显式上下文管理，和网页chat4不一样，token的消耗可能更大</br>
-3.由于每次测试都会消耗token，不妨在本地先运行训练代码保证逻辑无误，我提供了一个范本：SimpleModule.main
+## 用法
 
-更新：</br>
-（1）更新了GPT-4的调用方式，现在支持few-shot的GPT-4的对话方式
+1. **本地训练测试**  
+   运行 `SimpleModule.main` 进行本地训练测试。
 
-（2）解决访问GPT出现502 Bad Gateway的问题
-1.管理员身份运行cmd
-2.输入ipconfig /flushdns
-3.输入netsh winsock reset
-4.重启电脑即可
+2. **超参数调优**  
+   运行 `LLM_Agent.HPO.main`，基于 LLM Agent 进行超参数调优。可通过 `EXP.config` 修改基本配置参数。
+
+3. **模型量化**  
+   运行 `LLM_Agent.Quant.main`，基于 LLM Agent 进行量化，支持 QAT（混合精度量化）。
+
+---
+
+## 注意事项
+
+- **Key 要有余额**：必须使用余额充足的 API Key 才能正常调用。  
+- **显式上下文管理**：与网页版 ChatGPT 不同，请务必手动管理对话上下文，避免意外断流，且 token 消耗可能更大。  
+- **本地验证**：每次测试都会消耗 token，建议先在本地运行 `SimpleModule.main`，确保逻辑正确后再调用 Agent。
+
+---
+
+## 更新日志
+
+1. **GPT-4 调用方式更新**  
+   - 现已支持 Few-shot 对话模式。
+
+2. **502 Bad Gateway 问题修复**  
+   如遇到访问 GPT 出现 “502 Bad Gateway” 错误，请按以下步骤操作：  
+   ```bash
+   # 以管理员身份打开命令提示符
+   ipconfig /flushdns
+   netsh winsock reset
+   # 重启电脑
 
 
+
+# **English Version**
+
+# Overview
+A lightweight Agent implementation for quantization-aware model fine-tuning.
+
+---
+
+## Usage
+
+1. **Local Training & Testing**  
+   Run `SimpleModule.main` to perform local training and validation.
+
+2. **Hyperparameter Optimization**  
+   Run `LLM_Agent.HPO.main` for LLM Agent–based hyperparameter tuning. Adjust basic settings via `EXP.config`.
+
+3. **Model Quantization**  
+   Run `LLM_Agent.Quant.main` to perform quantization with the LLM Agent, including QAT (quantization-aware training).
+
+---
+
+## Notes
+
+- **API Key Balance**  
+  Ensure your API key has sufficient balance for calls.
+
+- **Explicit Context Management**  
+  Unlike the web ChatGPT, you must manually manage the conversation context. Token consumption may be higher.
+
+- **Local Verification**  
+  Each test consumes tokens. It’s recommended to verify the workflow locally by running `SimpleModule.main` before using the Agent.
+
+---
+
+## Changelog
+
+1. **Updated GPT-4 Invocation**  
+   - Added support for few-shot conversation mode.
+
+2. **Fixed 502 Bad Gateway Error**  
+   If you encounter a “502 Bad Gateway” when accessing GPT, execute the following in an administrator command prompt:
+   ```bash
+   ipconfig /flushdns
+   netsh winsock reset
+   # Then reboot your machine
