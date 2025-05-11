@@ -78,6 +78,7 @@ A lightweight Agent implementation for quantization-aware model fine-tuning.
 
 1. **Updated GPT-4 Invocation**  
    - Added support for few-shot conversation mode.
+   - Added support for stream conversation mode
 
 2. **Fixed 502 Bad Gateway Error**  
    If you encounter a “502 Bad Gateway” when accessing GPT, execute the following in an administrator command prompt:
